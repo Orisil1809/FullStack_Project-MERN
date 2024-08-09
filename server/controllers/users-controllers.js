@@ -6,7 +6,7 @@ const User = require("../models/user");
 const getUsers = async (req, res, next) => {
   let users;
   try {
-    users = await User.find({}, "email name"); // get only eamil and name fields. Also -password works to drop password
+    users = await User.find({}, "-password"); // get only email and name fields. Also -password works to drop password
   } catch (err) {
     const error = new HttpError(
       "Fetching users failed, please try again later",
