@@ -1,0 +1,9 @@
+{
+    "env": {
+        "DB_USER": "orisil",
+        "DB_PASSWORD": "Ori180998",
+        "DB_NAME": "mern",
+        "GOOGLE_API_KEY": "AIzaSyBAFj5ZDW9CTO0qw3-Z3Lmk1lu1m7hKzRQ",
+        "JWT_KEY": "supersecret_dont_share"
+    }
+}

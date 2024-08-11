@@ -68,7 +68,7 @@ const Auth = () => {
       // fetch - to send http request - we can also use axios for that purpose
       try {
         const responseData = await sendRequest(
-          "http://localhost:5001/api/users/login",
+          process.env.REACT_APP_BACKEND_URL + "/users/login",
           "POST",
           JSON.stringify({
             email: formState.inputs.email.value,
@@ -89,7 +89,7 @@ const Auth = () => {
         formData.append("image", formState.inputs.image.value);
         // fetch - to send http request - we can also use axios for that purpose
         const responseData = await sendRequest(
-          "http://localhost:5001/api/users/signup",
+          process.env.REACT_APP_BACKEND_URL + "/users/signup",
           "POST",
           formData
         );
